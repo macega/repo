@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>org.codehaus.mojo.archetypes</groupId>
+    <artifactId>mojo-archetypes</artifactId>
+    <version>4</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>pom-root</artifactId>
+  <version>1.1</version>
+  <packaging>maven-archetype</packaging>
+  <name>POM Root Archetype</name>
+  <description>Root project archetype for creating multi module projects</description>
+  <scm>
+    <connection>scm:svn:http://svn.codehaus.org/mojo/tags/pom-root-1.1</connection>
+    <developerConnection>scm:svn:https://svn.codehaus.org/mojo/tags/pom-root-1.1</developerConnection>
+    <url>http://fisheye.codehaus.org/browse/mojo/tags/pom-root-1.1</url>
+  </scm>
+</project>

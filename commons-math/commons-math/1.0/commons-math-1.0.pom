@@ -1,0 +1,153 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>commons-math</groupId>
+  <artifactId>commons-math</artifactId>
+  <name>Math</name>
+  <version>1.0</version>
+  <description>The Math project is a library of lightweight, self-contained mathematics and statistics components addressing the most common practical problems not immediately available in the Java programming language or commons-lang.</description>
+  <url>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</url>
+  <issueManagement>
+    <url>http://nagoya.apache.org/bugzilla/enter_bug.cgi?reporter=&amp;product=Commons&amp;version=unspecified&amp;component=Math&amp;rep_platform=All&amp;op_sys=All&amp;priority=Other&amp;bug_severity=normal&amp;bug_status=NEW&amp;assigned_to=&amp;cc=&amp;bug_file_loc=&amp;short_desc=%5Bpatch%5D+%22Your+subject+heading+here%22&amp;comment=Please+provide+details+here.+Its+best+to+submit+patches+that+alter+existing+file%0D%0Acontent+in+%22unified+cvs+diff%22+format.+%0D%0A%0D%0ASubmissions+that+provide+new+files+can+be+supplied+as+direct+file+attachments+or%0D%0Aarchives+in+zip+or+tar.gz+format.+please+be+kind+enough+to+identify+the+format%0D%0Aof+the+attached+archive+as+bugzill+tends+to+strip+these+characterstics+by%0D%0Aremoving+the+files+extension.&amp;maketemplate=Remember+values+as+bookmarkable+template&amp;form_name=enter_bug</url>
+  </issueManagement>
+  <ciManagement>
+    <notifiers>
+      <notifier>
+        <configuration>
+          <address>commons-dev@jakarta.apache.org</address>
+        </configuration>
+      </notifier>
+    </notifiers>
+  </ciManagement>
+  <inceptionYear>2003</inceptionYear>
+  <mailingLists>
+    <mailingList>
+      <name>Commons Dev List</name>
+      <subscribe>commons-dev-subscribe@jakarta.apache.org</subscribe>
+      <unsubscribe>commons-dev-unsubscribe@jakarta.apache.org</unsubscribe>
+      <archive>http://nagoya.apache.org/eyebrowse/SummarizeList?listName=commons-dev@jakarta.apache.org</archive>
+    </mailingList>
+    <mailingList>
+      <name>Commons User List</name>
+      <subscribe>commons-user-subscribe@jakarta.apache.org</subscribe>
+      <unsubscribe>commons-user-unsubscribe@jakarta.apache.org</unsubscribe>
+      <archive>http://nagoya.apache.org/eyebrowse/SummarizeList?listName=commons-user@jakarta.apache.org</archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <name>Albert Davidson Chou</name>
+      <email>achou at apache dot org</email>
+    </developer>
+    <developer>
+      <id>mdiggory</id>
+      <name>Mark Diggory</name>
+      <email>mdiggory at apache dot org</email>
+    </developer>
+    <developer>
+      <id>rdonkin</id>
+      <name>Robert Burrell Donkin</name>
+      <email>rdonkin at apache dot org</email>
+    </developer>
+    <developer>
+      <id>tobrien</id>
+      <name>Tim O'Brien</name>
+      <email>tobrien at apache dot org</email>
+    </developer>
+    <developer>
+      <id>pietsch</id>
+      <name>J. Pietschmann</name>
+      <email>j3322ptm at yahoo dot de</email>
+    </developer>
+    <developer>
+      <id>psteitz</id>
+      <name>Phil Steitz</name>
+      <email>psteitz at apache dot org</email>
+    </developer>
+    <developer>
+      <id>brentworden</id>
+      <name>Brent Worden</name>
+      <email>brentworden at apache dot org</email>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Ken Geis</name>
+    </contributor>
+    <contributor>
+      <name>Piotr Kochanski</name>
+    </contributor>
+    <contributor>
+      <name>Fredrik Norin</name>
+    </contributor>
+    <contributor>
+      <name>Christopher Schuck</name>
+    </contributor>
+    <contributor>
+      <name>Kim van der Linde</name>
+    </contributor>
+  </contributors>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>/LICENSE.txt</url>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:cvs:pserver:anoncvs@cvs.apache.org:/home/cvspublic:jakarta-commons/${pom.artifactId.substring(8)}</connection>
+    <url>http://cvs.apache.org/viewcvs/jakarta-commons/${pom.artifactId.substring(8)}/</url>
+  </scm>
+  <organization>
+    <name>The Apache Software Foundation</name>
+    <url>http://jakarta.apache.org</url>
+  </organization>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
+    <testResources>
+      <testResource>
+        <directory>${pom.build.unitTestSourceDirectory}</directory>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.txt</include>
+        </includes>
+      </testResource>
+    </testResources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+          <excludes>
+            <exclude>**/*AbstractTest.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-discovery</groupId>
+      <artifactId>commons-discovery</artifactId>
+      <version>0.2</version>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>default</id>
+      <name>Default Repository</name>
+      <url>file:///www/jakarta.apache.org/builds/jakarta-commons/${pom.artifactId.substring(8)}/</url>
+    </repository>
+    <site>
+      <id>default</id>
+      <name>Default Site</name>
+      <url>scp://jakarta.apache.org//www/jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</url>
+    </site>
+  </distributionManagement>
+</project>

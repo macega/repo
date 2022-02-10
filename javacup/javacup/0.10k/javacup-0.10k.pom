@@ -1,0 +1,8 @@
+<?xml version="1.0"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javacup</groupId>
+  <artifactId>javacup</artifactId>
+  <name>JavaCup</name>
+  <version>0.10k</version>
+  <url>http://www2.cs.tum.edu/projects/cup/</url>
+</project>

@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+    <groupId>br.com.autocom</groupId>
+    <artifactId>nfe-wsdl</artifactId>
+    <version>4.00.4</version>
+    <name>Nfe-Wsdl</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+	<distributionManagement>
+		<repository>
+			<id>autocom</id>
+			<url>http://nexus.autocomsistemas.com.br/nexus/content/repositories/autocom/</url>
+		</repository>
+	</distributionManagement>
+
+  <dependencies>
+  		<dependency>
+		    <groupId>org.apache.axis2</groupId>
+		    <artifactId>axis2-kernel</artifactId>
+		    <version>1.7.5</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.apache.axis2</groupId>
+		    <artifactId>axis2-adb</artifactId>
+		    <version>1.7.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-jaxws</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-transport-http</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-transport-local</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.apache.ws.commons.axiom</groupId>
+		    <artifactId>axiom-api</artifactId>
+		    <version>1.2.20</version>
+		</dependency>
+ </dependencies>
+
+</project>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.olap4j</groupId>
+  <artifactId>olap4j</artifactId>
+  <version>0.9.7.145</version>
+  <url>http://www.olap4j.org/</url>
+</project>

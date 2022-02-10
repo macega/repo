@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Feb 10 09:00:28 BOT 2019
+java-nfe-4.00.6.jar>=
+java-nfe-4.00.6-jar-with-dependencies.jar>=
+java-nfe-4.00.6.pom>=

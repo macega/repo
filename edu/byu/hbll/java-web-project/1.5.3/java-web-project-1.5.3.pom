@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <parent>
+    <groupId>edu.byu.hbll</groupId>
+    <artifactId>java-pom</artifactId>
+    <version>1.5.3</version>
+  </parent>
+ 
+  <artifactId>java-web-project</artifactId>
+  <packaging>maven-archetype</packaging>
+
+  <name>Java Web Application Archetype</name>
+  <description>Maven archetype for Java EE applications</description>
+  
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>3.0.1</version>
+      </extension>
+    </extensions>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <!-- Required so that .gitignore gets included in archetypes; see https://issues.apache.org/jira/browse/MRESOURCES-190 -->
+          <addDefaultExcludes>false</addDefaultExcludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

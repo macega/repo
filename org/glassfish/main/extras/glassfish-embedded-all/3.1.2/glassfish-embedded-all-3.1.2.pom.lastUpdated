@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Feb 06 16:52:14 BOT 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1549486334892
+@default-maven2-repository.dev.java.net-http\://maven.glassfish.org/content/groups/glassfish/.lastUpdated=1549486333211
+http\://maven.glassfish.org/content/groups/glassfish/.error=Could not transfer artifact org.glassfish.main.extras\:glassfish-embedded-all\:pom\:3.1.2 from/to maven2-repository.dev.java.net (http\://maven.glassfish.org/content/groups/glassfish)\: Certificate for <maven.glassfish.org> doesn't match any of the subject alternative names\: [maven.java.net]

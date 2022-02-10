@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Oct 15 14:52:31 BOT 2018
+java-nfe-4.00.6.jar>=
+java-nfe-4.00.6-jar-with-dependencies.jar>=
+java-nfe-4.00.6.pom>=

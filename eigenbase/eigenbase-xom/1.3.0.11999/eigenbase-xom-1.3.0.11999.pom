@@ -1,0 +1,7 @@
+<?xml version="1.0"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>eigenbase</groupId>
+  <artifactId>eigenbase-xom</artifactId>
+  <version>1.3.0.11999</version>
+  <url>http://www.eigenbase.org/</url>
+</project>
